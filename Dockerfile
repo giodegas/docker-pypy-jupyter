@@ -7,3 +7,6 @@ RUN apt-get update && apt-get upgrade -q -y && \
 
 RUN pip install --upgrade pip
 RUN pip install jupyter
+
+EXPOSE 8888/tcp
+
