@@ -6,7 +6,7 @@ RUN apt-get update && apt-get upgrade -q -y && \
     apt-get install -q -y build-essential autogen autoconf automake git libcurl4-openssl-dev libgmp-dev libjansson-dev
 
 RUN pip install --upgrade pip
-RUN pip install numpy jupyter
+RUN pip install numpy jupyter scipy
 
 EXPOSE 8888/tcp
 
