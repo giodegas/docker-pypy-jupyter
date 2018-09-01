@@ -1,9 +1,13 @@
 # docker-pypy-jupyter
-[Jupyter Notebook](http://jupyter.org) running with a [PyPy](http://pypy.org) accelerated Python3 kernel
+[Jupyter Notebook](http://jupyter.org) running with a [PyPy](http://pypy.org) accelerated Python (2 or 3) kernel
 
 1. pull the image:
 
 ``docker pull giodegas/pypy-jupyter``
+
+if you need Python2.7 compatibility:
+
+``docker pull giodegas/pypy-jupyter:2``
 
 2. create and run the container instance:
 
@@ -30,3 +34,4 @@
 5. then launch in your browser the URL with the right token:
 
 ```http://127.0.0.1:8888/?token=b20247c869adb06c7ff7ec2e9c97b260681e5a5080777fa7```
+
