@@ -1,7 +1,7 @@
 # docker-pypy-jupyter
 [Jupyter Notebook](http://jupyter.org) running with a [PyPy](http://pypy.org) accelerated Python (2 or 3) kernel
 
-1. pull the image:
+1. pull the (base numpy) image:
 
 ``docker pull giodegas/pypy-jupyter``
 
@@ -9,9 +9,15 @@ if you need Python2.7 compatibility:
 
 ``docker pull giodegas/pypy-jupyter:2``
 
+or a full blown scipy image including scikit-learn and more:
+
+``docker pull giodegas/pypy-jupyter:scipy``
+
 2. create and run the container instance:
 
-``docker run -it -p 8888:8888 --name jup giodegas/pypy-jupyter /bin/bash``
+``docker run -it -p 8888:8888 --name jup giodegas/pypy-jupyter:<TAG> /bin/bash``
+
+_specify 2, 3 or scipy in TAG . If missing the latest goes, which is 3_
 
 3. launch jupyter notebook server inside the container:
 
