@@ -10,6 +10,6 @@ RUN pip install scipy ipython jupyter pandas sympy pytest nose Pillow GMM
 RUN pip install joblib==0.11
 RUN export SKLEARN_SITE_JOBLIB=true
 RUN pip install --pre scikit-learn
-# COPY compat.py /usr/local/site-packages/sklearn/externals/joblib/externals/loky/backend/.
+COPY compat.py /usr/local/site-packages/sklearn/externals/joblib/externals/loky/backend/.
 
 EXPOSE 8888/tcp
