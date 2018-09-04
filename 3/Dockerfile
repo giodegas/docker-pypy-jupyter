@@ -8,7 +8,8 @@ RUN apt-get update && apt-get upgrade -q -y && \
                           libcurl4-openssl-dev libgmp-dev libjansson-dev libblas-dev liblapack-dev
 
 RUN pip install --upgrade pip
-RUN pip install numpy matplotlib jupyter 
+RUN pip install numpy matplotlib jupyter pytest
+RUN pytest -m numpy
 
 EXPOSE 8888/tcp
 
