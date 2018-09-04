@@ -9,7 +9,7 @@ RUN apt-get update && apt-get upgrade -q -y && \
 
 RUN pip install --upgrade pip
 RUN pip install requests selenium numpy matplotlib jupyter pytest
-RUN pytest -m numpy
+RUN pytest --pyargs --continue-on-collection-errors numpy
 
 EXPOSE 8888/tcp
 
