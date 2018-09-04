@@ -11,6 +11,7 @@ RUN pip install joblib==0.11
 ENV SKLEARN_SITE_JOBLIB true
 RUN pip install --pre scikit-learn
 #COPY compat.py /usr/local/site-packages/sklearn/externals/joblib/externals/loky/backend/.
-RUN pip install Cython scikit-image gensim
+RUN pip install Cython 
+RUN scikit-image gensim
 
 EXPOSE 8888/tcp
