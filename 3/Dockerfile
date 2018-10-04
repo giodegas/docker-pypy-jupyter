@@ -10,7 +10,6 @@ RUN apt-get update && apt-get upgrade -q -y && \
 RUN pip install --upgrade pip
 RUN pip install requests selenium numpy matplotlib jupyter pytest
 COPY dotest /
-# RUN sh /dotest numpy
 
 EXPOSE 8888/tcp
 
