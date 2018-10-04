@@ -1,4 +1,4 @@
-FROM giodegas/pypy-jupyter:3dev
+FROM giodegas/pypy-jupyter:3
 
 MAINTAINER G De Gasperis <giovanni@giodegas.it>
 
