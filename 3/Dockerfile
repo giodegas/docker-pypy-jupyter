@@ -8,7 +8,8 @@ RUN apt-get install -q -y build-essential autogen autoconf automake git \
                           libcurl4-openssl-dev libgmp-dev libjansson-dev libblas-dev liblapack-dev
 
 RUN pip install --upgrade pip
-RUN pip install requests selenium numpy matplotlib jupyter pytest
+RUN pip install requests selenium numpy 
+RUN pip install matplotlib jupyter pytest
 COPY dotest /
 
 EXPOSE 8888/tcp
