@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -q -y apt-utils && apt-get upgrade -q -y
 RUN apt-get install -q -y build-essential autogen autoconf automake git \
                           vim nano \
                           libcurl4-openssl-dev libgmp-dev libjansson-dev libblas-dev liblapack-dev \
-                          libpng-dev libfreetype6-dev
+                          libpng-dev libfreetype6-dev pkg-config
 
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
