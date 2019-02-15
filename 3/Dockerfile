@@ -10,9 +10,7 @@ RUN apt-get install -q -y build-essential autogen autoconf automake git \
 
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
-RUN pip install cycler python-dateutil kiwisolver pyparsing
-RUN pip install requests selenium numpy
-RUN pip install matplotlib jupyter pytest 
+RUN pip install cycler python-dateutil kiwisolver pyparsing requests selenium numpy matplotlib jupyter pytest 
 COPY dotest /
 
 EXPOSE 8888/tcp
