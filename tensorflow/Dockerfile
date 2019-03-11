@@ -1,6 +1,6 @@
 FROM pypy:3-7
 
-MAINTAINER G De Gasperis <giovanni@giodegas.it>
+MAINTAINER Aly Shmahell <aly.shmahell@gmail.com>
 
 RUN apt-get update && apt-get install -q -y apt-utils && apt-get upgrade -q -y
 RUN apt-get install -q -y build-essential autogen autoconf automake git \
