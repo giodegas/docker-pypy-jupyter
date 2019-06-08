@@ -1,4 +1,4 @@
-FROM pypy:3
+FROM pypy:3.6
 
 MAINTAINER G De Gasperis <giovanni@giodegas.it>
 
