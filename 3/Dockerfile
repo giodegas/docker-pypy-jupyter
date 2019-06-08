@@ -7,7 +7,7 @@ RUN apt-get update && apt-get upgrade -q -y && \
     apt-get autoremove -q -y && \
     apt-get install -q -y build-essential autogen autoconf automake git \
                           vim nano pkg-config \
-                          libcurl4-openssl-dev libgmp-dev libjansson-dev libblas-dev liblapack-dev
+                          libcurl4-openssl-dev libgmp-dev libjansson-dev libblas-dev liblapack-dev libfreetype6-dev
 
 RUN pip install --upgrade pip
 RUN pip install requests selenium numpy matplotlib jupyter pytest
