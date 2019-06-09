@@ -6,9 +6,7 @@ RUN apt-get update && apt-get upgrade -q -y && \
     apt-get install -q -y gfortran
 
 RUN pip3 install --upgrade pip
-RUN pip3 install scipy ipython jupyter pandas sympy Pillow GMM 
-RUN pip3 install scikit-learn
-RUN pip3 install Cython 
-RUN pip3 install scikit-image gensim
+RUN pip3 install Cython scipy ipython jupyter pandas sympy Pillow GMM 
+RUN pip3 install scikit-learn scikit-image gensim
 
 EXPOSE 8888/tcp
